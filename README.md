@@ -43,9 +43,6 @@ Replaces greedy heuristics with the Hungarian Algorithm (scipy.optimize.linear_s
 1. Clone this repository to your machine:
    git clone https://github.com/yourusername/fmcw-radar-sim.git
 
-2. Install the required execution and plotting dependencies:
-   pip install -r requirements.txt
-
 ### Running the Simulation
 To execute the runtime hardware simulator loop and view the real-time control, run:
 ```bash
