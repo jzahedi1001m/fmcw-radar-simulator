@@ -42,7 +42,6 @@ Replaces greedy heuristics with the Hungarian Algorithm (scipy.optimize.linear_s
 ### Installation
 1. Clone this repository to your machine:
    git clone https://github.com/yourusername/fmcw-radar-sim.git
-   cd camera-actuator-control
 
 2. Install the required execution and plotting dependencies:
    pip install -r requirements.txt
