@@ -38,6 +38,8 @@ Replaces greedy heuristics with the Hungarian Algorithm (scipy.optimize.linear_s
 
 ### Prerequisites
 * Python 3.8 or higher
+* scipy
+* numpy
 
 ### Installation
 1. Clone this repository to your machine:
