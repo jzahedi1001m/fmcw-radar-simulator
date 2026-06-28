@@ -48,7 +48,7 @@ Utilizes the Hungarian Algorithm (scipy.optimize.linear_sum_assignment) to perfo
 
 ### Installation
 1. Clone this repository to your machine:
-   git clone https://github.com/yourusername/fmcw-radar-sim.git
+   git clone https://github.com/yourusername/fmcw-radar-simulator.git
 
 ### Running the Simulation
 To execute the runtime hardware simulator loop and view the real-time control, run:
