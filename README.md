@@ -49,13 +49,42 @@ To execute the runtime hardware simulator loop and view the real-time control, r
 python src/fmcw_sim.py
 ```
 
+### Simulation Analysis
+When executed, the system tracks multiple targets through successive frames. Based on the default environment specifications, the output for first 2 frames as follows:
 
+```text
+Frame 0 | 5 confirmed objects.
+  ID 0: Range=7.79m, Velocity=1.52m/s, Angle=-25.00°
+  ID 1: Range=19.79m, Velocity=-7.60m/s, Angle=-14.95°
+  ID 2: Range=19.79m, Velocity=0.00m/s, Angle=-10.01°
+  ID 3: Range=19.79m, Velocity=0.00m/s, Angle=-0.02°
+  ID 4: Range=34.78m, Velocity=7.98m/s, Angle=11.99°
 
-### Simulation Telemetry & Analysis
-When executed, the system tracks multiple targets through successive frames. The output telemetry demonstrates:
+Frame 1 | 5 confirmed objects.
+  ID 0: Range=7.79m, Velocity=1.52m/s, Angle=-25.02°
+  ID 1: Range=19.79m, Velocity=-7.60m/s, Angle=-14.96°
+  ID 2: Range=19.79m, Velocity=0.00m/s, Angle=-9.98°
+  ID 3: Range=19.79m, Velocity=0.00m/s, Angle=-0.00°
+  ID 4: Range=35.38m, Velocity=7.98m/s, Angle=11.98°
 
-* Range Tracking: Accurate state estimation despite noise.
+Frame 2 | 5 confirmed objects.
+  ID 0: Range=8.15m, Velocity=1.53m/s, Angle=-25.01°
+  ID 1: Range=19.32m, Velocity=-7.61m/s, Angle=-14.96°
+  ID 2: Range=19.79m, Velocity=0.00m/s, Angle=-9.98°
+  ID 3: Range=19.79m, Velocity=0.00m/s, Angle=0.01°
+  ID 4: Range=35.52m, Velocity=7.98m/s, Angle=12.00°
 
-* Velocity Stabilization: Consistent Doppler measurements through the tracker.
+Frame 3 | 5 confirmed objects.
+  ID 0: Range=8.29m, Velocity=1.53m/s, Angle=-25.00°
+  ID 1: Range=19.09m, Velocity=-7.60m/s, Angle=-14.97°
+  ID 2: Range=19.79m, Velocity=0.00m/s, Angle=-9.99°
+  ID 3: Range=19.79m, Velocity=0.00m/s, Angle=0.01°
+  ID 4: Range=35.90m, Velocity=7.98m/s, Angle=12.01°
 
-* ID Persistence: Robust track maintenance during dense target scenarios using GNN association.
+Frame 4 | 5 confirmed objects.
+  ID 0: Range=8.37m, Velocity=1.52m/s, Angle=-25.01°
+  ID 1: Range=18.71m, Velocity=-7.61m/s, Angle=-14.96°
+  ID 2: Range=19.79m, Velocity=0.00m/s, Angle=-10.00°
+  ID 3: Range=19.79m, Velocity=0.00m/s, Angle=0.01°
+  ID 4: Range=36.36m, Velocity=7.99m/s, Angle=12.01°
+  ```
